@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+/* Javascript Handle This Class When Click In Toggle Button */
+
 .active{
     background-color: rgb(31, 29, 29);
     color: white;
@@ -15,12 +18,21 @@
 
 .active #themeBtn{
     color: white;
+    text-shadow:  0 0px 20px;
 }
 
 .active #themeMode{
     color: white;
     text-shadow: 0 0px 20px white;
 }
+
+.active #toggle{
+    background-color: rgb(31, 29, 29);
+}
+
+/*#############################################################*/
+
+
 
 .main-div{
     height: 100vh;
@@ -101,7 +113,7 @@
 }
 
 .toggle{
-    background-color: rgba(51, 49, 49, 0.212);
+    background-color:#d0d0d0;
     display: flex;
 }
 
@@ -111,6 +123,8 @@
     outline: none;
     font-size: 30px;
     margin-left: 50px;
+    padding-top: 5px;
+    font-weight: bolder;
 }
 
 .btn-class{
