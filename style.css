@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.active{
+    background-color: rgb(31, 29, 29);
+    color: white;
+}
+
+.active a{
+    color: yellow;
+}
+
+.active #themeBtn{
+    color: white;
+}
+
+.active #themeMode{
+    color: white;
+    text-shadow: 0 0px 20px white;
+}
+
+.main-div{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-div{
+    height: 100vh;
+    width: 85vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box *{
+    margin: 10px 0px;
+}
+
+.box h2{
+    font-family: sans-serif;
+}
+
+.box p{
+    font-family: sans-serif;
+    opacity: 0.5;
+}
+
+.box a{
+    padding: 10px 0;
+    text-decoration: none;
+    border-bottom: 2px solid blue;
+    opacity: 0.5;
+}
+
+
+.right-div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.upper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lower{
+    background-color: #63b9d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.lower-text{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.big-text h1{
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.toggle{
+    background-color: rgba(51, 49, 49, 0.212);
+    display: flex;
+}
+
+.toggle button{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.btn-class{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+
+
+@media screen and (max-width: 1212px) {
+    .center-div{
+        grid-template-columns: 1fr 0.8fr;
+    }
+}
+
+@media screen and (max-width: 1173px) {
+    .center-div{
+        grid-template-columns: 1fr;
+    }
+
+    .left-div{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding-bottom: 20px;
+    }
+
+    .right-div{
+        grid-template-rows: 1fr 0.5fr;
+    }
+
+    .box{
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .left-div{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .left-div{
+        grid-template-columns: 1fr;
+    }
+
+    .big-text h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .big-text h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .big-text h1{
+        font-size: 30px;
+    }
+}
